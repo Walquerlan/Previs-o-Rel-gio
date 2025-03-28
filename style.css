@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://picsum.photos/1920/1089?random=1");
+}
+
+.caixa-maior {
+    background: #000000;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 25px;
+    width: 95%;
+    max-width: 500px;
+}
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: #ffffff;
+    width: calc(100% - 70px);
+}
+
+.botao {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 60px;
+    background-color:#7c7c7c79;
+    cursor: pointer;
+    float: right;
+    display: block;
+}
+
+.botao:hover{
+    box-shadow: 0 8px 28px rgb(4, 247, 206);
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
+
+.img-buscar {
+    width: 25px;
+}
+
+.cidade {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.temperatura {
+    font-size: 80px;
+    color: #06ebf3;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-previsao {
+    color: #ffffff;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.umidade {
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    color: #06ebf3;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 18px 2px;
+    height: 80px;
+    margin-top: 38px;
+    width: 72%;
+    margin-left: 51px;
+}
+
+.relogio span{
+    font-size: 90px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.relogio span:not(:last-child)::after{
+    content: ':';
+}
+
+.legenda{
+ color: #eff2f3;
+ margin-left: 95px;
+ margin-top: 50px;
+}
+
+p strong{
+    color: #06ebf3;
+}
